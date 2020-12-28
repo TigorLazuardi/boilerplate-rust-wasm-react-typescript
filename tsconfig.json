@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "noImplicitAny": false,
+        // Must not using commonjs
+        "module": "es2020",
+        "target": "es2020",
+        "lib": ["es2017", "dom", "dom.iterable"],
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "jsx": "react",
+        "allowJs": true,
+        "baseUrl": "src",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "moduleResolution": "node",
+        "downlevelIteration": true,
+        "paths": {
+            "@comps/*": ["components/*"]
+        }
+    },
+    "include": ["./app"],
+    "exclude": ["./app/crate"]
+}
